@@ -13,6 +13,7 @@ pinMode(servo1, OUTPUT);
 
 pinMode(servo2, OUTPUT);
 
+pinMode(speaker, OUTPUT);
 
 
 randomSeed(analogRead(0)); //initializes the pseudo-random number generator,
