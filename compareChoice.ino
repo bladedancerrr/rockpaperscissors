@@ -1,63 +1,39 @@
-//returns a comparison of the user and robot
+/** Returns a comparison of the moves made by the user and robot. */
 
 int compareChoice(char user, char robot){
+    int result;
 
-int result;
+    if(user == robot){
+        result = 0;
+    }
 
-if(user == robot){
+    else if(user == 'r'){
+        if(robot == 's'){
+            result = 1;
+        }
 
-result = 0;
+        else{
+            result = 2;
+        }
+    }
 
-}
+    else if(user == 'p'){
+        if(robot == 'r'){
+            result = 1;
+        }
+        else{
+            result = 2;
+        }
+    }
 
-else if(user == 'r'){
+    else if(user == 's'){
+        if(robot == 'r'){
+            result = 2;
+        }
+        else{
+            result = 1;
+        }
+    }
 
-if(robot == 's'){
-
-result = 1;
-
-}
-
-else{
-
-result = 2;
-
-}
-
-}
-
-else if(user == 'p'){
-
-if(robot == 'r'){
-
-result = 1;
-
-}
-
-else{
-
-result = 2;
-
-}
-
-}
-
-else if(user == 's'){
-
-if(robot == 'r'){
-
-result = 2;
-
-}
-
-else{
-
-result = 1;
-
-}
-
-}
-
-return result;
-
+    return result;
 }

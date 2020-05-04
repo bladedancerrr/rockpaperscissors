@@ -1,4 +1,4 @@
-//reads user's input from bend sensors
+/** Reads user's input from bend sensors */
 char getUserChoice(){
   
   char userChoice;
